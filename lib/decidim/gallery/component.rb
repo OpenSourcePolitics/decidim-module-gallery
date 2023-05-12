@@ -8,8 +8,9 @@ Decidim.register_component(:gallery) do |component|
   component.icon = "decidim/gallery/icon.svg"
   component.permissions_class_name = "Decidim::Gallery::Permissions"
 
-  # component.on(:before_destroy) do |instance|
-  # end
+  component.on(:before_destroy) do |instance|
+    raise StandardError, "Can't remove this component" if Decidim::Gallery::GalleryItem.where(component: instance).any?
+  end
 
   # component.on(:update) do |instance|
   # end
