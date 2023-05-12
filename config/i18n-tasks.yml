@@ -1,0 +1,18 @@
+---
+
+base_locale: en
+locales: [en, fr]
+
+search:
+  strict: false
+  relative_roots:
+    - app/controllers
+    - app/helpers
+    - app/views
+    - app/cells
+
+ignore_unused:
+  - "decidim.components.slider.name"
+
+ignore_missing:
+  - locale.name
