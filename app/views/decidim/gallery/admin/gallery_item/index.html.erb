@@ -1,0 +1,52 @@
+<div class="card">
+  <div class="card-divider">
+    <h2 class="card-title">
+      <%= t(".title") %>
+      <%= link_to t("actions.new", scope: "decidim.gallery", name: t("gallery_item.index.title", scope: "decidim.gallery.admin")), new_gallery_item_path, class: "button tiny button--title" if allowed_to? :create, :gallery %>
+    </h2>
+  </div>
+
+  <div class="card-section">
+    <div class="table-scroll">
+      <table class="table-list">
+        <thead>
+          <tr>
+            <th><%= t("models.gallery_item.fields.title", scope: "decidim.gallery") %></th>
+            <th><%= t("models.gallery_item.fields.weight", scope: "decidim.gallery") %></th>
+            <th><%= t("models.gallery_item.fields.created_at", scope: "decidim.gallery") %></th>
+            <th class="actions"><%= t("actions.title", scope: "decidim.gallery") %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% gallery_items.created_at_desc.each do |post| %>
+            <tr data-id="<%= post.id %>">
+              <td><%= translated_attribute(post.title) %><br></td>
+              <td><%= post.weight %><br></td>
+              <td><%= l post.created_at, format: "%d/%m/%Y - %H:%M" %></td>
+              <td class="table-list__actions">
+                <% if allowed_to? :update, :gallery, gallery_item: post  %>
+                  <% if post.published? %>
+                    <%= icon_link_to "x", unpublish_gallery_item_path(post), t("actions.unpublish", scope: "decidim.gallery"), method: :put, class: "action-icon--unpublish", data: { confirm: t("actions.confirm_unpublish", scope: "decidim.gallery") } %>
+                  <% else %>
+                    <%= icon_link_to "check", publish_gallery_item_path(post), t("actions.publish", scope: "decidim.gallery"), method: :put, class: "action-icon--publish" %>
+                  <% end %>
+                <% else %>
+                  <span class="action-space icon"></span>
+                <% end %>
+
+                <% if allowed_to? :update, :gallery, gallery_item: post  %>
+                  <%= icon_link_to "pencil", edit_gallery_item_path(post), t("actions.edit", scope: "decidim.gallery"), class: "action-icon--edit" %>
+                <% end %>
+
+                <% if allowed_to? :destroy, :gallery, gallery_item: post %>
+                  <%= icon_link_to "circle-x", gallery_item_path(post), t("actions.destroy", scope: "decidim.gallery"), method: :delete, class: "action-icon--remove", data: { confirm: t("actions.confirm_destroy", scope: "decidim.gallery") } %>
+                <% end %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <%= paginate gallery_items, theme: "decidim" %>
+    </div>
+  </div>
+</div>

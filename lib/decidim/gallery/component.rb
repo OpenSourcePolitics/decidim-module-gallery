@@ -19,8 +19,9 @@ Decidim.register_component(:gallery) do |component|
   # component.actions = %w(create)
   # component.actions = %w(endorse vote create withdraw amend comment)
 
-  # component.settings(:global) do |settings|
-  # end
+  component.settings(:global) do |settings|
+    settings.attribute :gallery_type, type: :enum, default: "image", choices: %w(image video)
+  end
 
   # component.settings(:step) do |settings|
   # end
