@@ -1,0 +1,13 @@
+<% items.each do |item| %>
+  <% next unless item.attached_uploader(:photo).attached? %>
+  <div class="column gallery-item">
+    <% if browser.mobile? %>
+      <%= image_tag item.attached_uploader(:photo).path(variant: :big), alt: translated_attribute(item.title), class: "speaker-image" %>
+    <% else %>
+      <a href="#" title="<%= translated_attribute(item.title) %>" data-open="galleryModal_<%= model.section %>_<%=model.id %>" data-id="link<%= item.id %>">
+        <%= image_tag item.attached_uploader(:photo).path(variant: :big), alt: translated_attribute(item.title), class: "speaker-image" %>
+      </a>
+    <% end %>
+    <div class="gallery-caption"><%= translated_attribute(item.title) %></div>
+  </div>
+<% end %>

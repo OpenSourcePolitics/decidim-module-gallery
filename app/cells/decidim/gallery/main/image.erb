@@ -1,0 +1,70 @@
+<h3 class="section-heading gallery-heading"><%= title %> (<%= t( ".#{gallery_component.settings.gallery_type}", count: items.total_count) %>)</h3>
+<div class="row small-up <%= model.css %> medium-up-3 mb-l gallery image" id="gallery_<%= model.section %>_<%=model.id %>">
+  <%= cell("decidim/gallery/main", model).collection %>
+</div>
+<% unless items.total_count.zero? || items.last_page? %>
+  <div class="row">
+    <div class="column">
+      <%= link_to t("decidim.gallery.main.load_more"), gallery_path(format: 'js', page: items.next_page,section: model.section, cb: model.id), class: "button small hollow", id: "link_gallery_#{model.section}_#{model.id}" , remote: true %>
+    </div>
+  </div>
+<% end %>
+
+<div class="small gallery-pop-up reveal" id="galleryModal_<%= model.section %>_<%=model.id %>" <% unless browser.mobile? %> data-reveal<% end %> >
+  <button class="close-button" data-close aria-label="<%= t("decidim.gallery.main.close_modal") %>"
+          type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+
+  <div class="orbit row" data-orbit data-auto-play="false">
+    <div class="orbit-wrapper">
+      <div class="orbit-controls">
+        <button class="orbit-previous"><span class="show-for-sr"><%= t("decidim.gallery.main.previous_slide") %></span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.425 38.092">
+            <path id="Path_3921" data-name="Path 3921" d="M0,.13,18.222,22.218l8.81-10.68L36.55,0" transform="translate(23.789 0.771) rotate(90)" fill="none" stroke-width="6"/>
+          </svg>
+        </button>
+        <button class="orbit-next"><span class="show-for-sr"><%= t("decidim.gallery.main.next_slide") %></span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.425 38.092">
+            <path id="Path_3922" data-name="Path 3922" d="M0,22.088,18.222,0l8.81,10.68L36.55,22.218" transform="translate(22.854 0.771) rotate(90)" fill="none" stroke-width="6"/>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="orbit-container">
+        <%= cell("decidim/gallery/main", model).list_items %>
+      </ul>
+    </div>
+  </div>
+</div>
+<% content_for(:js_content) do %>
+
+  <%= javascript_pack_tag "decidim_gallery" %>
+
+  <script type="application/javascript">
+    function addGalleryHandlers() {
+      $(".gallery-item > a").on("click", function(event){
+        event.preventDefault();
+        $(".gallery-item > a.gallery-item-active").removeClass("gallery-item-active");
+        $(event.target).parent("a").addClass("gallery-item-active");
+        console.log("click");
+
+        $(".reveal").on("open.zf.reveal", function(){
+          $(window).trigger('resize');
+        });
+        $(".reveal").on("closeme.zf.reveal", function(){
+          let link = $(".gallery-item > a.gallery-item-active");
+          let id = link.data("id");
+          let chosenSlide = $("[data-target="+id+"]");
+          let index = chosenSlide.index(".orbit-container > li");
+          $('.orbit').foundation('changeSlide', true, chosenSlide, index);
+          $(document).on("slidechange.zf.orbit", function (){
+            $(window).trigger('resize');
+          });
+        });
+      });
+    }
+    document.addEventListener("DOMContentLoaded", function(event) { addGalleryHandlers(); });
+
+  </script>
+<% end  %>
