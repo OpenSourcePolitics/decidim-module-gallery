@@ -1,0 +1,9 @@
+<%= decidim_form_for(@form, url: { action: "update" }, html: { class: "form edit_post" }) do |f| %>
+  <%= render partial: "form_#{current_component.settings["gallery_type"]}", object: f, locals: {
+    form: f,
+    title: t("title", scope: "decidim.gallery.admin.gallery_item.new.#{current_component.settings["gallery_type"]}")
+  } %>
+  <div class="button--double form-general-submit">
+    <%= f.submit t(".save") %>
+  </div>
+<% end %>

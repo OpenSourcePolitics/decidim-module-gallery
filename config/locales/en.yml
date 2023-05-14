@@ -4,3 +4,55 @@ en:
     components:
       gallery:
         name: Gallery
+        settings:
+          global:
+            announcement: Announcement
+            gallery_type: Type of Gallery
+            gallery_type_choices:
+              image: Image
+              video: Video
+          step:
+            announcement: Announcement
+    gallery:
+      actions:
+        confirm_destroy: Are you sure you want to delete?
+        confirm_unpublish: Are you sure you want to unpublish?
+        destroy: Delete
+        edit: Edit
+        new: New Gallery Item
+        publish: Publish
+        title: Actions
+        unpublish: Unpublish
+      admin:
+        gallery_item:
+          create:
+            invalid: Invalid
+            success: Valid
+          destroy:
+            success: Successfully deleted
+          edit:
+            save: Save
+          index:
+            title: Gallery
+          new:
+            create: Create
+            image:
+              title: New Gallery Image Item
+            title: New Gallery Item
+            video:
+              title: New Gallery Video Item
+          publish:
+            invalid: There was an error publishing resource
+            success: Successfully published
+          unpublish:
+            invalid: There was an error unpublishing resource
+            success: Successfully unpublished
+          update:
+            invalid: There was an error updating the resource
+            success: Successfully updated
+      models:
+        gallery_item:
+          fields:
+            created_at: Creation date
+            title: Title
+            weight: Weight
