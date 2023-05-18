@@ -1,0 +1,9 @@
+<% items.each_with_index do |item, index| %>
+  <% next unless item.attached_uploader(:photo).attached? %>
+  <li class="<%= index.zero? ?  'is-active ' : '' %>orbit-slide" data-target="link<%= item.id %>">
+    <figure class="orbit-figure">
+      <%= image_tag item.attached_uploader(:photo).path(variant: :big), class: 'orbit-image' %>
+      <figcaption class="orbit-caption gallery-caption"><%= translated_attribute(item.title) %></figcaption>
+    </figure>
+  </li>
+<% end  %>

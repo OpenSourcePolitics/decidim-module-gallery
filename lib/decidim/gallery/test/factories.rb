@@ -3,6 +3,12 @@
 require "decidim/core/test/factories"
 
 FactoryBot.define do
+  VIDEO_LIST = [
+    "http://www.youtube.com/watch?v=iwGFalTRHDA",
+    "https://www.dailymotion.com/video/x8kvv9s",
+    "http://vimeo.com/channels/staffpicks/48237094"
+  ].freeze
+
   factory :gallery_component, parent: :component do
     name { Decidim::Components::Namer.new(participatory_space.organization.available_locales, :gallery).i18n_name }
     manifest_name { :gallery }
@@ -35,6 +41,7 @@ FactoryBot.define do
   factory :gallery_item, class: "Decidim::Gallery::GalleryItem" do
     component { build(:component, :published, manifest_name: "gallery") }
     author { build(:user, :confirmed, organization: component.organization) }
+    title { Decidim::Faker::Localized.sentence(word_count: 3) }
 
     trait :published do
       published_at { Time.current }
@@ -46,6 +53,6 @@ FactoryBot.define do
   end
 
   factory :video_gallery_item, parent: :gallery_item do
-    video_url { { en: "http://www.youtube.com/watch?v=iwGFalTRHDA" } }
+    sequence(:video_url) { |n| { en: VIDEO_LIST[n % 3] } }
   end
 end

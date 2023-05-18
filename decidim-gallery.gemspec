@@ -20,5 +20,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "decidim-admin", Decidim::Gallery.decidim_version
   s.add_dependency "decidim-core", Decidim::Gallery.decidim_version
+  s.add_development_dependency "decidim-participatory_processes", Decidim::Gallery.decidim_version
   s.metadata["rubygems_mfa_required"] = "true"
 end

@@ -1,0 +1,11 @@
+<div class="row columns">
+  <div class="title-action">
+    <h2 class="title-action__title section-heading"><%= translated_attribute(current_component.name) %></h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="columns">
+    <%= cell("decidim/gallery/main", OpenStruct.new(gallery_id: current_component.id, per_page: 10), context: { view_context: self }) %>
+  </div>
+</div>
