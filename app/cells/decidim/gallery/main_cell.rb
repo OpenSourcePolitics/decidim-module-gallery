@@ -71,7 +71,11 @@ module Decidim
       end
 
       def per_page
-        model.per_page.to_i
+        gallery_component.settings.items_per_page
+      end
+
+      def show_title?
+        gallery_component.settings.show_title
       end
 
       private

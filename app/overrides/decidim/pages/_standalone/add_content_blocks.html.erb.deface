@@ -1,0 +1,7 @@
+<!-- insert_after ".card__content" -->
+
+<div class="card__content">
+    <% if page.gallery_id.present? %>
+      <%= cell("decidim/gallery/main", OpenStruct.new(gallery_id: page.gallery_id), context: { view_context: self }) %>
+    <% end %>
+</div>

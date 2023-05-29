@@ -1,0 +1,11 @@
+<!-- insert_before 'div.form-general-submit' -->
+<div class="card">
+  <div class="card-divider">
+    <h2 class="card-title"><%= t("decidim.gallery.settings")%></h2>
+  </div>
+  <div class="card-section">
+    <div class="row column">
+      <%= f.select :gallery_id, f.object.galleries.map { |gallery| formatted_gallery_name(gallery) }, include_blank: t("decidim.gallery.none") %>
+    </div>
+  </div>
+</div>

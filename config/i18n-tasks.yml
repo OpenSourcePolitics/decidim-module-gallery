@@ -10,9 +10,13 @@ search:
     - app/helpers
     - app/views
     - app/cells
+    - lib/decidim/gallery
 
 ignore_unused:
-  - "decidim.components.slider.name"
+  - "decidim.components.gallery.name"
+  - "decidim.gallery.admin.gallery_item.new.image.title"
+  - "decidim.gallery.admin.gallery_item.new.video.title"
+  - "decidim.components.gallery.settings.global.*"
 
 ignore_missing:
   - locale.name
