@@ -6,6 +6,6 @@
 
 <div class="row">
   <div class="columns">
-    <%= cell("decidim/gallery/main", OpenStruct.new(gallery_id: current_component.id, per_page: 10), context: { view_context: self }) %>
+    <%= cell("decidim/gallery/main", OpenStruct.new(gallery_id: current_component.id), context: { view_context: self }) %>
   </div>
 </div>

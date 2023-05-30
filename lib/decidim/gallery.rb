@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require "deface"
 require "decidim/gallery/admin"
 require "decidim/gallery/engine"
 require "decidim/gallery/admin_engine"

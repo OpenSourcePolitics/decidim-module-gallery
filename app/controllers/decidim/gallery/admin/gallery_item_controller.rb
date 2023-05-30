@@ -84,6 +84,15 @@ module Decidim
           end
         end
 
+        def destroy
+          enforce_permission_to :destroy, :gallery, gallery_item: gallery_item
+          gallery_item.destroy!
+
+          flash[:notice] = I18n.t("gallery_item.destroy.success", scope: "decidim.gallery.admin")
+
+          redirect_to root_path
+        end
+
         private
 
         def fetch_form
