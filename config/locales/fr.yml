@@ -6,13 +6,17 @@ fr:
         name: Gallery
         settings:
           global:
-            announcement: Announcement
+            additional_css: Additional CSS
             gallery_type: Type of Gallery
             gallery_type_choices:
               image: Image
               video: Video
-          step:
-            announcement: Announcement
+            items_per_page: Items per page
+            items_per_page_choices:
+              '12': '12'
+              '15': '15'
+              '18': '18'
+            show_title: Show title
     gallery:
       actions:
         confirm_destroy: Are you sure you want to delete?
@@ -24,6 +28,7 @@ fr:
         title: Actions
         unpublish: Unpublish
       admin:
+        formatted_text: Gallery %{component_name} in %{space_name}
         gallery_item:
           create:
             invalid: Invalid
@@ -38,7 +43,6 @@ fr:
             create: Create
             image:
               title: New Gallery Image Item
-            title: New Gallery Item
             video:
               title: New Gallery Video Item
           publish:
@@ -50,9 +54,24 @@ fr:
           update:
             invalid: There was an error updating the resource
             success: Successfully updated
+      main:
+        close_modal: Close
+        image:
+          few: "%{count} Photos"
+          one: 1 Photo
+          other: "%{count} Photos"
+        load_more: View more
+        next_slide: Next
+        previous_slide: Previous
+        video:
+          few: "%{count} Videos"
+          one: 1 Video
+          other: "%{count} Videos"
       models:
         gallery_item:
           fields:
             created_at: Creation date
             title: Title
             weight: Weight
+      none: None
+      settings: Gallery Settings
