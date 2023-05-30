@@ -3,44 +3,44 @@ ro:
   decidim:
     components:
       gallery:
-        name: Gallery
+        name: Galerie
         settings:
           global:
-            additional_css: Additional CSS
-            gallery_type: Type of Gallery
+            additional_css: CSS suplimentar
+            gallery_type: Tipul galeriei
             gallery_type_choices:
-              image: Image
+              image: Imagine
               video: Video
-            items_per_page: Items per page
+            items_per_page: Articole pe pagină
             items_per_page_choices:
               '12': '12'
               '15': '15'
               '18': '18'
-            show_title: Show title
+            show_title: Arată titlul
     gallery:
       actions:
-        confirm_destroy: Are you sure you want to delete?
-        confirm_unpublish: Are you sure you want to unpublish?
-        destroy: Delete
-        edit: Edit
-        new: New Gallery Item
-        publish: Publish
-        title: Actions
-        unpublish: Unpublish
+        confirm_destroy: Eşti sigur că dorești să ștergi?
+        confirm_unpublish: Sigur doriți să anulați publicarea?
+        destroy: Şterge
+        edit: Editare
+        new: Element nou de galerie
+        publish: Publicare
+        title: Acțiuni
+        unpublish: Anulează publicarea
       admin:
-        formatted_text: Gallery %{component_name} in %{space_name}
+        formatted_text: Galerie %{component_name} în %{space_name}
         gallery_item:
           create:
             invalid: Invalid
             success: Valid
           destroy:
-            success: Successfully deleted
+            success: Șters cu succes
           edit:
-            save: Save
+            save: Salvează
           index:
-            title: Gallery
+            title: Galerie
           new:
-            create: Create
+            create: Creează
             image:
               title: New Gallery Image Item
             video:
