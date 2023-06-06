@@ -3,75 +3,75 @@ fr:
   decidim:
     components:
       gallery:
-        name: Gallery
+        name: Galerie
         settings:
           global:
-            additional_css: Additional CSS
-            gallery_type: Type of Gallery
+            additional_css: CSS additionnel
+            gallery_type: Type de Galerie
             gallery_type_choices:
               image: Image
-              video: Video
-            items_per_page: Items per page
+              video: Vidéo
+            items_per_page: Éléments par page
             items_per_page_choices:
               '12': '12'
               '15': '15'
               '18': '18'
-            show_title: Show title
+            show_title: Afficher le titre
     gallery:
       actions:
-        confirm_destroy: Are you sure you want to delete?
-        confirm_unpublish: Are you sure you want to unpublish?
-        destroy: Delete
-        edit: Edit
-        new: New Gallery Item
-        publish: Publish
+        confirm_destroy: Etes-vous sûr de vouloir supprimer ?
+        confirm_unpublish: Êtes-vous sûr de vouloir dépublier ?
+        destroy: Supprimer
+        edit: Modifier
+        new: Nouvel élément de la galerie
+        publish: Publier
         title: Actions
-        unpublish: Unpublish
+        unpublish: Dé-publier
       admin:
-        formatted_text: Gallery %{component_name} in %{space_name}
+        formatted_text: Galerie %{component_name} dans %{space_name}
         gallery_item:
           create:
-            invalid: Invalid
-            success: Valid
+            invalid: Non valide
+            success: Valide
           destroy:
-            success: Successfully deleted
+            success: Suppression effectuée avec succès
           edit:
-            save: Save
+            save: Sauvegarder
           index:
-            title: Gallery
+            title: Galerie
           new:
-            create: Create
+            create: Créer
             image:
-              title: New Gallery Image Item
+              title: Nouvelle image de galerie
             video:
-              title: New Gallery Video Item
+              title: Nouvel vidéo de la galerie
           publish:
-            invalid: There was an error publishing resource
-            success: Successfully published
+            invalid: Une erreur s'est produite lors de la publication de votre fichier
+            success: Publié avec succès
           unpublish:
-            invalid: There was an error unpublishing resource
-            success: Successfully unpublished
+            invalid: Une erreur s'est produite lors de la dé-publication de votre fichier
+            success: Dé-publié avec succès
           update:
-            invalid: There was an error updating the resource
-            success: Successfully updated
+            invalid: Une erreur est survenue lors de la mise à jour du fichier
+            success: Mis à jour avec succès
       main:
-        close_modal: Close
+        close_modal: Fermer
         image:
-          few: "%{count} Photos"
+          few: "%{count} photos"
           one: 1 Photo
-          other: "%{count} Photos"
-        load_more: View more
-        next_slide: Next
-        previous_slide: Previous
+          other: "%{count} photos"
+        load_more: Afficher plus
+        next_slide: Suivant
+        previous_slide: Précédent
         video:
-          few: "%{count} Videos"
-          one: 1 Video
-          other: "%{count} Videos"
+          few: "%{count} vidéos"
+          one: 1 vidéo
+          other: "%{count} vidéos"
       models:
         gallery_item:
           fields:
-            created_at: Creation date
-            title: Title
-            weight: Weight
-      none: None
-      settings: Gallery Settings
+            created_at: Date de création
+            title: Titre
+            weight: Poids
+      none: Aucun
+      settings: Configuration de la galerie
