@@ -49,8 +49,8 @@ ro:
             invalid: A apărut o eroare la publicarea resursei
             success: Publicare reușită
           unpublish:
-            invalid: A apărut o eroare la de-publicarea resursei
-            success: Depublicat cu succes
+            invalid: A apărut o eroare la actualizarea resursei
+            success: Actualizare reușită
           update:
             invalid: A apărut o eroare la actualizarea resursei
             success: Actualizare reușită
@@ -60,7 +60,7 @@ ro:
           few: "%{count} Imagini"
           one: 1 imagine
           other: "%{count} Imagini"
-        load_more: Vezi mai multe...
+        load_more: Vezi mai multe
         next_slide: Următorul
         previous_slide: Anteriorul
         video:
