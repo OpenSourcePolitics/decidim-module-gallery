@@ -42,36 +42,36 @@ ro:
           new:
             create: Creează
             image:
-              title: New Gallery Image Item
+              title: Element nou de galerie
             video:
-              title: New Gallery Video Item
+              title: Element video nou
           publish:
-            invalid: There was an error publishing resource
-            success: Successfully published
+            invalid: A apărut o eroare la publicarea resursei
+            success: Publicare reușită
           unpublish:
-            invalid: There was an error unpublishing resource
-            success: Successfully unpublished
+            invalid: A apărut o eroare la de-publicarea resursei
+            success: Depublicat cu succes
           update:
-            invalid: There was an error updating the resource
-            success: Successfully updated
+            invalid: A apărut o eroare la actualizarea resursei
+            success: Actualizare reușită
       main:
-        close_modal: Close
+        close_modal: Închide
         image:
-          few: "%{count} Photos"
-          one: 1 Photo
-          other: "%{count} Photos"
-        load_more: View more
-        next_slide: Next
-        previous_slide: Previous
+          few: "%{count} Imagini"
+          one: 1 imagine
+          other: "%{count} Imagini"
+        load_more: Vezi mai multe...
+        next_slide: Următorul
+        previous_slide: Anteriorul
         video:
-          few: "%{count} Videos"
-          one: 1 Video
-          other: "%{count} Videos"
+          few: "%{count} videoclipuri"
+          one: 1 videoclip
+          other: "%{count} videoclipuri"
       models:
         gallery_item:
           fields:
-            created_at: Creation date
-            title: Title
-            weight: Weight
-      none: None
-      settings: Gallery Settings
+            created_at: Data creării
+            title: Titlu
+            weight: Greutate
+      none: Niciuna
+      settings: Setări galerie
