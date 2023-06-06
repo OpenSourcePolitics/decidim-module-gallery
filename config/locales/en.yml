@@ -1,11 +1,13 @@
 ---
 en:
+
   decidim:
     components:
       gallery:
         name: Gallery
         settings:
           global:
+            announcement: Announcement
             additional_css: Additional CSS
             gallery_type: Type of Gallery
             gallery_type_choices:
@@ -16,6 +18,7 @@ en:
               '12': '12'
               '15': '15'
               '18': '18'
+            show_announcement: Display announcement
             show_title: Show title
     gallery:
       actions:
