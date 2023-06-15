@@ -7,7 +7,7 @@ fr:
         settings:
           global:
             additional_css: CSS additionnel
-            announcement: Announcement
+            announcement: Annonce
             gallery_type: Type de Galerie
             gallery_type_choices:
               image: Image
@@ -17,7 +17,7 @@ fr:
               '12': '12'
               '15': '15'
               '18': '18'
-            show_announcement: Display announcement
+            show_announcement: Montrer l'annonce
             show_title: Afficher le titre
     gallery:
       actions:
