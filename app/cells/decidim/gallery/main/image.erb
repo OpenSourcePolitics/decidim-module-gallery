@@ -1,4 +1,13 @@
-<h3 class="section-heading gallery-heading"><%= title %> (<%= t( ".#{gallery_component.settings.gallery_type}", count: items.total_count) %>)</h3>
+<% if gallery_component.settings.show_title? %>
+  <h3 class="section-heading gallery-heading"><%= title %> (<%= t( ".#{gallery_component.settings.gallery_type}", count: items.total_count) %>)</h3>
+<% end %>
+
+<% if gallery_component.settings.show_announcement? %>
+  <div class="row">
+    <div class="column"><%= translated_attribute(gallery_component.settings.announcement) %></div>
+  </div>
+<% end %>
+
 <div class="row small-up <%= model.css %> medium-up-3 mb-l gallery image" id="gallery_<%= model.section %>_<%=model.gallery_id %>">
   <%= cell("decidim/gallery/main", model).collection %>
 </div>

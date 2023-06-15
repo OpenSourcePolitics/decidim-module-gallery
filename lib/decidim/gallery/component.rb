@@ -20,6 +20,8 @@ Decidim.register_component(:gallery) do |component|
   # component.actions = %w(endorse vote create withdraw amend comment)
 
   component.settings(:global) do |settings|
+    settings.attribute :announcement, type: :text, translated: true, editor: true
+    settings.attribute :show_announcement, type: :boolean, default: true
     settings.attribute :gallery_type, type: :enum, default: "image", choices: %w(image video)
     settings.attribute :items_per_page, type: :enum, default: "12", choices: %w(12 15 18)
     settings.attribute :additional_css, type: :string, default: "medium-up-2 large-up-2"
