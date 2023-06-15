@@ -7,6 +7,7 @@ ro:
         settings:
           global:
             additional_css: CSS suplimentar
+            announcement: Announcement
             gallery_type: Tipul galeriei
             gallery_type_choices:
               image: Imagine
@@ -16,6 +17,7 @@ ro:
               '12': '12'
               '15': '15'
               '18': '18'
+            show_announcement: Display announcement
             show_title: Arată titlul
     gallery:
       actions:
