@@ -1,0 +1,79 @@
+---
+fr:
+  decidim:
+    components:
+      gallery:
+        name: Galerie
+        settings:
+          global:
+            additional_css: CSS additionnel
+            announcement: Annonce
+            gallery_type: Type de Galerie
+            gallery_type_choices:
+              image: Image
+              video: Vidéo
+            items_per_page: Éléments par page
+            items_per_page_choices:
+              '12': '12'
+              '15': '15'
+              '18': '18'
+            show_announcement: Montrer l'annonce
+            show_title: Afficher le titre
+    gallery:
+      actions:
+        confirm_destroy: Etes-vous sûr de vouloir supprimer ?
+        confirm_unpublish: Êtes-vous sûr de vouloir dépublier ?
+        destroy: Supprimer
+        edit: Modifier
+        new: Nouvel élément de la galerie
+        publish: Publier
+        title: Actions
+        unpublish: Dé-publier
+      admin:
+        formatted_text: Galerie %{component_name} dans %{space_name}
+        gallery_item:
+          create:
+            invalid: Non valide
+            success: Valide
+          destroy:
+            success: Suppression effectuée avec succès
+          edit:
+            save: Sauvegarder
+          index:
+            title: Galerie
+          new:
+            create: Créer
+            image:
+              title: Nouvelle image de galerie
+            video:
+              title: Nouvel vidéo de la galerie
+          publish:
+            invalid: Une erreur s'est produite lors de la publication de votre fichier
+            success: Publié avec succès
+          unpublish:
+            invalid: Une erreur s'est produite lors de la dé-publication de votre fichier
+            success: Dé-publié avec succès
+          update:
+            invalid: Une erreur est survenue lors de la mise à jour du fichier
+            success: Mis à jour avec succès
+      main:
+        close_modal: Fermer
+        image:
+          few: "%{count} photos"
+          one: 1 Photo
+          other: "%{count} photos"
+        load_more: Afficher plus
+        next_slide: Suivant
+        previous_slide: Précédent
+        video:
+          few: "%{count} vidéos"
+          one: 1 vidéo
+          other: "%{count} vidéos"
+      models:
+        gallery_item:
+          fields:
+            created_at: Date de création
+            title: Titre
+            weight: Poids
+      none: Aucun
+      settings: Configuration de la galerie
