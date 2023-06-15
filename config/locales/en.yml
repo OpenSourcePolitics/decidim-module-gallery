@@ -1,14 +1,13 @@
 ---
 en:
-
   decidim:
     components:
       gallery:
         name: Gallery
         settings:
           global:
-            announcement: Announcement
             additional_css: Additional CSS
+            announcement: Announcement
             gallery_type: Type of Gallery
             gallery_type_choices:
               image: Image
