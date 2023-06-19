@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    decidim-gallery (0.0.2)
+    decidim-gallery (0.0.1)
       decidim-admin (~> 0.26.0)
       decidim-core (~> 0.26.0)
       deface (~> 1.9)
@@ -797,7 +797,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 2.7.5p203
+   ruby 2.7.6p219
 
 BUNDLED WITH
    2.3.5
