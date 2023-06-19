@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 module Decidim
-  # This holds the decidim-meetings version.
+  # This holds the decidim-gallery version.
   module Gallery
     def self.version
-      "0.0.2"
+      "0.0.1"
     end
 
     def self.decidim_version
