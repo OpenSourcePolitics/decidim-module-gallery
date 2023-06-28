@@ -1,6 +1,6 @@
 import Masonry from "./masonry/masonry";
 
-function addGalleryHandlers() {
+window.addGalleryHandlers = function () {
   $(".gallery-item > a").on("click", function(event){
     event.preventDefault();
     $(".gallery-item > a.gallery-item-active").removeClass("gallery-item-active");
