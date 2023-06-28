@@ -64,7 +64,7 @@ ro:
           other: "%{count} Imagini"
         load_more: Vezi mai multe
         next_slide: Următorul
-        no_results: There are no gallery items
+        no_results: Nu există înregistrări
         previous_slide: Anteriorul
         video:
           few: "%{count} videoclipuri"
