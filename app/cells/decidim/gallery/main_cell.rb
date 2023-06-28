@@ -24,7 +24,7 @@ module Decidim
         @items ||= Decidim::Gallery::GalleryItem
                    .published
                    .where(decidim_component_id: gallery_component.id)
-                   .order(weight: :desc, published_at: :desc)
+                   .order(weight: :asc, published_at: :asc)
                    .page(options[:page])
                    .per(per_page)
       end
