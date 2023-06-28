@@ -64,6 +64,7 @@ en:
           other: "%{count} Photos"
         load_more: View more
         next_slide: Next
+        no_results: There are no gallery items
         previous_slide: Previous
         video:
           few: "%{count} Videos"
