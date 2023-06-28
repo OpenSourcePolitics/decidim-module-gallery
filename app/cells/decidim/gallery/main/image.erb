@@ -1,6 +1,6 @@
 <%= render :gallery_structure %>
 
-<div class="small gallery-pop-up reveal" id="galleryModal_<%= model.section %>_<%=model.id %>" <% unless browser.mobile? %> data-reveal<% end %> >
+<div class="small gallery-pop-up reveal" id="galleryModal" <% unless browser.mobile? %> data-reveal<% end %> >
   <button class="close-button" data-close aria-label="<%= t("decidim.gallery.main.close_modal") %>"
           type="button">
     <span aria-hidden="true">&times;</span>

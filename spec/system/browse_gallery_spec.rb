@@ -41,7 +41,7 @@ describe "Browse gallery", type: :system do
       it "has working pagination" do
         expect(page).to have_content(/My gallery block/i)
         expect(page).to have_link("View more")
-        find("#link_gallery__#{gallery_component.id}").click
+        find("#link_gallery_#{gallery_component.id}").click
         expect(page).to have_selector(".gallery-item", count: 16)
       end
 
@@ -79,7 +79,7 @@ describe "Browse gallery", type: :system do
       it "has working pagination" do
         expect(page).to have_content(/My gallery block/i)
         expect(page).to have_link("View more")
-        find("#link_gallery__#{gallery_component.id}").click
+        find("#link_gallery_#{gallery_component.id}").click
         expect(page).to have_selector(".gallery-item", count: 16)
       end
 
