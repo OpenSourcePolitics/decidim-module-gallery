@@ -18,7 +18,8 @@ FactoryBot.define do
     trait :video do
       settings do
         {
-          gallery_type: :video
+          gallery_type: :video,
+          items_per_page: 12
         }
       end
     end
@@ -26,14 +27,15 @@ FactoryBot.define do
     trait :image do
       settings do
         {
-          gallery_type: :image
+          gallery_type: :image,
+          items_per_page: 12
         }
       end
     end
 
     trait :with_items do
       after(:create) do |gallery, _evaluator|
-        create_list("#{gallery.settings.gallery_type}_gallery_item".to_sym, 6, :published, component: gallery)
+        create_list("#{gallery.settings.gallery_type}_gallery_item".to_sym, 16, :published, component: gallery)
       end
     end
   end
