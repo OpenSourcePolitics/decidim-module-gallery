@@ -14,7 +14,7 @@
 <% unless items.total_count.zero? || items.last_page? %>
   <div class="row">
     <div class="column">
-      <%= link_to t("decidim.gallery.main.load_more"), gallery_path(format: 'js', page: items.next_page, section: model.section, cb: model.id), class: "button small hollow", id: "link_gallery_#{model.section}_#{model.id}", remote: true %>
+      <%= link_to t("decidim.gallery.main.load_more"), gallery_path(format: 'js', page: items.next_page, section: model.section, cb: model.id), class: "button small hollow", id: "link_gallery__#{model.gallery_id}" , remote: true %>
     </div>
   </div>
 <% end %>

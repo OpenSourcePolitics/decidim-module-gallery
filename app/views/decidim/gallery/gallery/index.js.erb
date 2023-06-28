@@ -1,0 +1,33 @@
+<% cell_block = cell("decidim/gallery/main", OpenStruct.new(gallery_id: current_component.id), context: { view_context: self }, page: params[:page] || 1) %>
+
+var $gallery = $("#gallery__<%= current_component.id %>");
+
+var content = $( '<%= j(cell_block.collection).strip.html_safe %>' );
+$gallery.append( content ).masonry( 'appended', content).masonry();
+
+var list_content = $( '<%= j(cell_block.list_items).strip.html_safe %>' );
+
+var $list = $(".orbit-container");
+$list.append(list_content);
+
+Foundation.reInit($('#galleryModal__<%= current_component.id %> > .orbit'));
+
+content
+    .find("img")
+    .one("load", function() {$gallery.masonry();})
+    .each(function() {
+        if(this.complete) { $(this).trigger('load'); }
+    });
+
+var $linkGallery = $("#link_gallery__<%= current_component.id %>");
+
+$linkGallery.attr("href","<%= root_path(format: 'js', page: cell_block.items.next_page, section: params[:section], cb: current_component.id ) %>")
+
+// <%= cell_block.items.last_page?.inspect %>
+console.log($linkGallery);
+
+<% if cell_block.items.last_page? %>
+  $linkGallery.hide();
+<% end %>
+
+addGalleryHandlers();
