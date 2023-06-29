@@ -17,7 +17,7 @@ fr:
               '12': '12'
               '15': '15'
               '18': '18'
-            show_announcement: Montrer l'annonce
+            show_announcement: Afficher l'annonce
             show_title: Afficher le titre
     gallery:
       actions:
@@ -25,10 +25,10 @@ fr:
         confirm_unpublish: Êtes-vous sûr de vouloir dépublier ?
         destroy: Supprimer
         edit: Modifier
-        new: Nouvel élément de la galerie
+        new: Nouvel élément de galerie
         publish: Publier
         title: Actions
-        unpublish: Dé-publier
+        unpublish: Dépublier
       admin:
         formatted_text: Galerie %{component_name} dans %{space_name}
         gallery_item:
@@ -46,13 +46,13 @@ fr:
             image:
               title: Nouvelle image de galerie
             video:
-              title: Nouvel vidéo de la galerie
+              title: Nouvel vidéo de galerie
           publish:
             invalid: Une erreur s'est produite lors de la publication de votre fichier
             success: Publié avec succès
           unpublish:
-            invalid: Une erreur s'est produite lors de la dé-publication de votre fichier
-            success: Dé-publié avec succès
+            invalid: Une erreur s'est produite lors de la dépublication de votre fichier
+            success: Dépublié avec succès
           update:
             invalid: Une erreur est survenue lors de la mise à jour du fichier
             success: Mis à jour avec succès
