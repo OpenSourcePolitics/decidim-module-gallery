@@ -7,7 +7,7 @@ ro:
         settings:
           global:
             additional_css: CSS suplimentar
-            announcement: Announcement
+            announcement: Anunț
             gallery_type: Tipul galeriei
             gallery_type_choices:
               image: Imagine
@@ -17,7 +17,7 @@ ro:
               '12': '12'
               '15': '15'
               '18': '18'
-            show_announcement: Display announcement
+            show_announcement: Afișează anunț
             show_title: Arată titlul
     gallery:
       actions:
@@ -64,6 +64,7 @@ ro:
           other: "%{count} Imagini"
         load_more: Vezi mai multe
         next_slide: Următorul
+        no_results: Nu există înregistrări
         previous_slide: Anteriorul
         video:
           few: "%{count} videoclipuri"
