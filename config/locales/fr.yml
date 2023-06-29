@@ -60,11 +60,11 @@ fr:
         close_modal: Fermer
         image:
           few: "%{count} photos"
-          one: 1 Photo
+          one: 1 photo
           other: "%{count} photos"
         load_more: Afficher plus
         next_slide: Suivant
-        no_results: There are no gallery items
+        no_results: Il n'y a pas d'images ou de vidéos dans cette galerie
         previous_slide: Précédent
         video:
           few: "%{count} vidéos"
