@@ -4,7 +4,7 @@ module Decidim
   # This holds the decidim-gallery version.
   module Gallery
     def self.version
-      "0.0.1"
+      "0.0.2"
     end
 
     def self.decidim_version
