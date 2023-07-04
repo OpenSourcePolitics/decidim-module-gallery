@@ -59,6 +59,7 @@ ro:
       main:
         close_modal: Închide
         image:
+          zero: 0 imagini
           few: "%{count} Imagini"
           one: 1 imagine
           other: "%{count} Imagini"
@@ -67,6 +68,7 @@ ro:
         no_results: Nu există înregistrări
         previous_slide: Anteriorul
         video:
+          zero: 0 videoclipuri
           few: "%{count} videoclipuri"
           one: 1 videoclip
           other: "%{count} videoclipuri"
