@@ -59,9 +59,9 @@ fr:
       main:
         close_modal: Fermer
         image:
-          few: "%{count} photos"
-          one: 1 photo
-          other: "%{count} photos"
+          few: "%{count} images"
+          one: 1 image
+          other: "%{count} images"
         load_more: Afficher plus
         next_slide: Suivant
         no_results: Il n'y a pas d'images ou de vidéos dans cette galerie
