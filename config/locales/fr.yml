@@ -59,6 +59,7 @@ fr:
       main:
         close_modal: Fermer
         image:
+          zero: No photos
           few: "%{count} images"
           one: 1 image
           other: "%{count} images"
@@ -67,6 +68,7 @@ fr:
         no_results: Il n'y a pas d'images ou de vidéos dans cette galerie
         previous_slide: Précédent
         video:
+          zero: No Videos
           few: "%{count} vidéos"
           one: 1 vidéo
           other: "%{count} vidéos"
