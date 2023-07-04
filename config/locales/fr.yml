@@ -61,7 +61,7 @@ fr:
         image:
           few: "%{count} images"
           one: 1 image
-          other: "%{count} photos"
+          other: "%{count} images"
         load_more: Afficher plus
         next_slide: Suivant
         no_results: Il n'y a pas d'images ou de vidéos dans cette galerie
