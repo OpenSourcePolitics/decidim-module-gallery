@@ -59,19 +59,19 @@ fr:
       main:
         close_modal: Fermer
         image:
-          zero: 0 images
           few: "%{count} images"
           one: 1 image
           other: "%{count} images"
+          zero: 0 images
         load_more: Afficher plus
         next_slide: Suivant
         no_results: Il n'y a pas d'images ou de vidéos dans cette galerie
         previous_slide: Précédent
         video:
-          zero: 0 vidéos
           few: "%{count} vidéos"
           one: 1 vidéo
           other: "%{count} vidéos"
+          zero: 0 vidéos
       models:
         gallery_item:
           fields:
