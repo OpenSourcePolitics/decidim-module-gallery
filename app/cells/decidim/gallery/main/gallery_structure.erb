@@ -1,5 +1,5 @@
 <% if gallery_component.settings.show_title? %>
-  <h3 class="section-heading gallery-heading"><%= title %> (<%= t( ".#{gallery_component.settings.gallery_type}", count: items.total_count) %>)</h3>
+  <h3 class="section-heading gallery-heading"><%= title %> (<%= t(gallery_component.settings.gallery_type, scope: "decidim.gallery.main", count: items.total_count) %>)</h3>
 <% end %>
 
 <% if gallery_component.settings.show_announcement? %>

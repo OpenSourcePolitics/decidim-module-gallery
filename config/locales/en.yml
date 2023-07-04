@@ -59,6 +59,7 @@ en:
       main:
         close_modal: Close
         image:
+          zero: No photos
           few: "%{count} Photos"
           one: 1 Photo
           other: "%{count} Photos"
@@ -67,6 +68,7 @@ en:
         no_results: There are no gallery items
         previous_slide: Previous
         video:
+          zero: No Videos
           few: "%{count} Videos"
           one: 1 Video
           other: "%{count} Videos"
