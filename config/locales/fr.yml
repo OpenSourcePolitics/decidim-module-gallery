@@ -59,8 +59,8 @@ fr:
       main:
         close_modal: Fermer
         image:
-          few: "%{count} photos"
-          one: 1 photo
+          few: "%{count} images"
+          one: 1 image
           other: "%{count} photos"
         load_more: Afficher plus
         next_slide: Suivant
