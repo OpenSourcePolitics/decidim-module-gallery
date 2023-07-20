@@ -6,7 +6,7 @@
     <span aria-hidden="true">&times;</span>
   </button>
 
-  <div class="orbit row" data-orbit data-auto-play="false">
+  <div class="orbit row" data-orbit data-auto-play="false" data-use-m-u-i="<%= Decidim::Gallery.enable_animation.inspect %>">
     <div class="orbit-wrapper">
       <div class="orbit-controls">
         <button class="orbit-previous"><span class="show-for-sr"><%= t("decidim.gallery.main.previous_slide") %></span>
