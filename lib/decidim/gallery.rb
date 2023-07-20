@@ -10,5 +10,10 @@ module Decidim
   # This namespace holds the logic of the `Gallery` component. This component
   # allows users to create gallery in a participatory space.
   module Gallery
+    include ActiveSupport::Configurable
+
+    config_accessor :enable_animation do
+      false
+    end
   end
 end

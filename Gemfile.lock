@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    decidim-gallery (0.0.3)
+    decidim-gallery (0.0.4)
       decidim-admin (~> 0.26.0)
       decidim-core (~> 0.26.0)
       deface (~> 1.9)
