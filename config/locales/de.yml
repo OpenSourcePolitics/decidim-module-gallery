@@ -1,0 +1,82 @@
+---
+de:
+  decidim:
+    components:
+      gallery:
+        name: Gallery
+        settings:
+          global:
+            additional_css: Additional CSS
+            announcement: Announcement
+            gallery_type: Type of Gallery
+            gallery_type_choices:
+              image: Image
+              video: Video
+            items_per_page: Items per page
+            items_per_page_choices:
+              '12': '12'
+              '15': '15'
+              '18': '18'
+            show_announcement: Display announcement
+            show_title: Show title
+    gallery:
+      actions:
+        confirm_destroy: Are you sure you want to delete?
+        confirm_unpublish: Are you sure you want to unpublish?
+        destroy: Delete
+        edit: Edit
+        new: New Gallery Item
+        publish: Publish
+        title: Actions
+        unpublish: Unpublish
+      admin:
+        formatted_text: Gallery %{component_name} in %{space_name}
+        gallery_item:
+          create:
+            invalid: Invalid
+            success: Valid
+          destroy:
+            success: Successfully deleted
+          edit:
+            save: Save
+          index:
+            title: Gallery
+          new:
+            create: Create
+            image:
+              title: New Gallery Image Item
+            video:
+              title: New Gallery Video Item
+          publish:
+            invalid: There was an error publishing resource
+            success: Successfully published
+          unpublish:
+            invalid: There was an error unpublishing resource
+            success: Successfully unpublished
+          update:
+            invalid: There was an error updating the resource
+            success: Successfully updated
+      main:
+        close_modal: Close
+        image:
+          few: "%{count} Photos"
+          one: 1 Photo
+          other: "%{count} Photos"
+          zero: No photos
+        load_more: View more
+        next_slide: Next
+        no_results: There are no gallery items
+        previous_slide: Previous
+        video:
+          few: "%{count} Videos"
+          one: 1 Video
+          other: "%{count} Videos"
+          zero: No Videos
+      models:
+        gallery_item:
+          fields:
+            created_at: Creation date
+            title: Title
+            weight: Weight
+      none: None
+      settings: Gallery Settings
