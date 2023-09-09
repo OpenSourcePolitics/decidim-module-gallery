@@ -3,7 +3,7 @@
 module Decidim
   module Gallery
     module Admin
-      class PublishGalleryItem < Rectify::Command
+      class PublishGalleryItem < ::Decidim::Gallery.base_command_class
         def initialize(gallery_item, current_user)
           @gallery_item = gallery_item
           @current_user = current_user

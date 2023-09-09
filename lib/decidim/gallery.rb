@@ -15,5 +15,13 @@ module Decidim
     config_accessor :enable_animation do
       false
     end
+
+    config_accessor :base_command_class do
+      if Decidim.version.include?("0.26")
+        Rectify::Command
+      else
+        Decidim::Command
+      end
+    end
   end
 end

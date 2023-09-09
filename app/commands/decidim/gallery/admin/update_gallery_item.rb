@@ -3,7 +3,7 @@
 module Decidim
   module Gallery
     module Admin
-      class UpdateGalleryItem < Rectify::Command
+      class UpdateGalleryItem < ::Decidim::Gallery.base_command_class
         include ::Decidim::AttachmentAttributesMethods
 
         def initialize(form, gallery_item)
