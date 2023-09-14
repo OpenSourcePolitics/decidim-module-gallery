@@ -29,4 +29,9 @@
 </div>
 <% content_for(:js_content) do %>
   <%= javascript_pack_tag "decidim_gallery" %>
+  <script type="application/javascript">
+    <%# We add the JS handler here, as we have the following change from 0.27 upgrade, which breakes the app
+    https://github.com/decidim/decidim/pull/9156 %>
+      document.addEventListener("DOMContentLoaded", function(event) { addGalleryHandlers(); });
+  </script>
 <% end  %>
