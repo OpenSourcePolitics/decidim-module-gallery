@@ -27,6 +27,7 @@ $(() => {
     $('.gallery.image').masonry({
       itemSelector: '.gallery-item',
     });
+    addGalleryHandlers();
   }).each(function() {
     if(this.complete) {
       $(this).trigger('load'); // For jQuery >= 3.0
