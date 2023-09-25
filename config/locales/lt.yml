@@ -48,35 +48,35 @@ lt:
             video:
               title: Naujas galerijos video elementas
           publish:
-            invalid: There was an error publishing resource
-            success: Successfully published
+            invalid: Skelbiant išteklį kilo problema
+            success: Sėkmingai paskelbta
           unpublish:
-            invalid: There was an error unpublishing resource
-            success: Successfully unpublished
+            invalid: Depublikuojant išteklį iškilo problema
+            success: Sėkmingai depublikuota
           update:
-            invalid: There was an error updating the resource
-            success: Successfully updated
+            invalid: Atnaujinant išteklį iškilo problema
+            success: Atnaujinta sėkmingai
       main:
-        close_modal: Close
+        close_modal: Uždaryti
         image:
-          few: "%{count} Photos"
-          one: 1 Photo
-          other: "%{count} Photos"
-          zero: No photos
-        load_more: View more
-        next_slide: Next
-        no_results: There are no gallery items
-        previous_slide: Previous
+          few: "%{count} nuotraukos"
+          one: 1 nuotrauka
+          other: "%{count} nuotraukos"
+          zero: Nuotraukų nėra
+        load_more: Rodyti daugiau
+        next_slide: Kitas
+        no_results: Galerijos turinio nėra
+        previous_slide: Ankstesnis
         video:
-          few: "%{count} Videos"
-          one: 1 Video
-          other: "%{count} Videos"
-          zero: No Videos
+          few: "%{count} vaizdo įrašai"
+          one: 1 vaizdo įrašas
+          other: "%{count} vaizdo įrašai"
+          zero: Nėra vaizdo įrašų
       models:
         gallery_item:
           fields:
-            created_at: Creation date
-            title: Title
-            weight: Weight
-      none: None
-      settings: Gallery Settings
+            created_at: Sukūrimo data
+            title: Pavadinimas
+            weight: Svoris
+      none: Nė vienos
+      settings: Galerijos nustatymai
