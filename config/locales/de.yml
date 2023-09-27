@@ -3,11 +3,11 @@ de:
   decidim:
     components:
       gallery:
-        name: Gallery
+        name: Galerie
         settings:
           global:
-            additional_css: Additional CSS
-            announcement: Announcement
+            additional_css: Zusätzliches CSS
+            announcement: Ankündigung
             gallery_type: Type of Gallery
             gallery_type_choices:
               image: Image
@@ -40,7 +40,7 @@ de:
           edit:
             save: Save
           index:
-            title: Gallery
+            title: Galerie
           new:
             create: Create
             image:
