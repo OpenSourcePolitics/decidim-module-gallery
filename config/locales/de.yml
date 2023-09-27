@@ -8,24 +8,24 @@ de:
           global:
             additional_css: Zusätzliches CSS
             announcement: Ankündigung
-            gallery_type: Type of Gallery
+            gallery_type: Art der Galerie
             gallery_type_choices:
-              image: Image
+              image: Bild
               video: Video
-            items_per_page: Items per page
+            items_per_page: Elemente pro Seite
             items_per_page_choices:
               '12': '12'
               '15': '15'
               '18': '18'
-            show_announcement: Display announcement
-            show_title: Show title
+            show_announcement: Ankündigung anzeigen
+            show_title: Titel anzeigen
     gallery:
       actions:
-        confirm_destroy: Are you sure you want to delete?
-        confirm_unpublish: Are you sure you want to unpublish?
-        destroy: Delete
-        edit: Edit
-        new: New Gallery Item
+        confirm_destroy: Sind Sie sicher, dass Sie löschen möchten?
+        confirm_unpublish: Möchten Sie die Veröffentlichung wirklich zurückziehen?
+        destroy: Löschen
+        edit: Bearbeiten
+        new: Neues Galerie-Element
         publish: Publish
         title: Actions
         unpublish: Unpublish
