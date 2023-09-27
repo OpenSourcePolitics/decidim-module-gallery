@@ -21,7 +21,7 @@ fr:
             show_title: Afficher le titre
     gallery:
       actions:
-        confirm_destroy: Etes-vous sûr de vouloir supprimer ?
+        confirm_destroy: Êtes-vous sûr de vouloir supprimer ?
         confirm_unpublish: Êtes-vous sûr de vouloir dépublier ?
         destroy: Supprimer
         edit: Modifier
