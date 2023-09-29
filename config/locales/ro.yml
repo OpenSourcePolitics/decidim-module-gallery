@@ -59,19 +59,19 @@ ro:
       main:
         close_modal: Închide
         image:
-          zero: 0 imagini
           few: "%{count} Imagini"
           one: 1 imagine
           other: "%{count} Imagini"
+          zero: 0 imagini
         load_more: Vezi mai multe
         next_slide: Următorul
         no_results: Nu există înregistrări
         previous_slide: Anteriorul
         video:
-          zero: 0 videoclipuri
           few: "%{count} videoclipuri"
           one: 1 videoclip
           other: "%{count} videoclipuri"
+          zero: 0 videoclipuri
       models:
         gallery_item:
           fields:

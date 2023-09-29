@@ -1,0 +1,82 @@
+---
+lt:
+  decidim:
+    components:
+      gallery:
+        name: Galerija
+        settings:
+          global:
+            additional_css: Papildomas CSS
+            announcement: Pranešimas
+            gallery_type: Galerijos tipas
+            gallery_type_choices:
+              image: Paveikslėlis
+              video: Vaizdo įrašas
+            items_per_page: Elementų kiekis puslapyje
+            items_per_page_choices:
+              '12': '12'
+              '15': '15'
+              '18': '18'
+            show_announcement: Rodyti pranešimą
+            show_title: Rodyti pavadinimą
+    gallery:
+      actions:
+        confirm_destroy: Ar tikrai norite pašalinti?
+        confirm_unpublish: Ar tikrai norite depublikuoti?
+        destroy: Ištrinti
+        edit: Redaguoti
+        new: Naujas galerijos elementas
+        publish: Skelbti
+        title: Veiksmai
+        unpublish: Depublikuoti
+      admin:
+        formatted_text: '%{component_name} galerija %{space_name} erdvėje'
+        gallery_item:
+          create:
+            invalid: Neteisingas
+            success: Teisingas
+          destroy:
+            success: Sėkmingai pašalinta
+          edit:
+            save: Išsaugoti
+          index:
+            title: Galerija
+          new:
+            create: Sukurti
+            image:
+              title: Naujas galerijos elementas
+            video:
+              title: Naujas galerijos video elementas
+          publish:
+            invalid: Skelbiant išteklį kilo problema
+            success: Sėkmingai paskelbta
+          unpublish:
+            invalid: Depublikuojant išteklį iškilo problema
+            success: Sėkmingai depublikuota
+          update:
+            invalid: Atnaujinant išteklį iškilo problema
+            success: Atnaujinta sėkmingai
+      main:
+        close_modal: Uždaryti
+        image:
+          few: "%{count} nuotraukos"
+          one: 1 nuotrauka
+          other: "%{count} nuotraukos"
+          zero: Nuotraukų nėra
+        load_more: Rodyti daugiau
+        next_slide: Kitas
+        no_results: Galerijos turinio nėra
+        previous_slide: Ankstesnis
+        video:
+          few: "%{count} vaizdo įrašai"
+          one: 1 vaizdo įrašas
+          other: "%{count} vaizdo įrašai"
+          zero: Nėra vaizdo įrašų
+      models:
+        gallery_item:
+          fields:
+            created_at: Sukūrimo data
+            title: Pavadinimas
+            weight: Svoris
+      none: Nė vienos
+      settings: Galerijos nustatymai
