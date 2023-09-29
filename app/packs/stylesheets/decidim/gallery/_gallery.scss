@@ -1,3 +1,29 @@
+@import "stylesheets/decidim/variables";
+@import "stylesheets/decidim/utils/settings";
+
 .gallery-item {
   margin-bottom: 10px;
+}
+
+#galleryModal {
+  .orbit-next, .orbit-previous {
+
+    background-color: rgba($black, .15);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $orbit-control-background-hover;
+    }
+  }
+
+  .orbit-controls {
+    svg {
+      width: 1rem;
+
+      path {
+        stroke: $white;
+      }
+    }
+  }
 }

@@ -4,9 +4,11 @@ module Decidim
   module Gallery
     class MainCell < Decidim::ViewModel
       delegate :public_name_key, :has_settings?, to: :model
-      delegate :content_for, to: :view_context
+      delegate :snippets, to: :view_context
 
       def show
+        snippets.add(:foot, helpers.javascript_pack_tag("decidim_gallery", defer: false))
+
         render gallery_type.to_sym if gallery_component.present?
       end
 
