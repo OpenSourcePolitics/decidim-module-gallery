@@ -15,11 +15,11 @@ module Decidim
         root to: "gallery#index"
       end
 
-      initializer "decidim_gallery.deface" do
-        Rails.application.configure do
-          config.deface.enabled = true
-        end
-      end
+      #initializer "decidim_gallery.deface" do
+      #  Rails.application.configure do
+      #    config.deface.enabled = true
+      #  end
+      #end
 
       initializer "decidim_gallery.webpacker.assets_path" do
         Decidim.register_assets_path File.expand_path("app/packs", root)
