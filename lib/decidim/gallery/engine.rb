@@ -2,8 +2,6 @@
 
 require "rails"
 require "decidim/core"
-require "nokogiri"
-require "deface"
 
 module Decidim
   module Gallery
